@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- minify -->
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <!-- latest -->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <!-- core style only -->
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="nes-text is-primary">Guess My Number!</h1>
+      <p class="between nes-text is-primary">(Between 1 and 20)</p>
+      <button class="nes-btn again"><img class="nes-avatar is-rounded is-large" alt="Gravatar image example" src="https://www.gravatar.com/avatar?s=15" style="image-rendering: pixelated;">
+        Again!</button>
+      <div class="number nes-text is-primary">?</div>
+    </header>
+    <main>
+      <section  class="left is-rounded">
+        <input type="number" class="nes-input is-dark guess" />
+        <button class="btn check nes-btn is-success">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message nes-text is-primary">Start guessing...</p>
+        <p class="label-score nes-text is-warning"> <i class="nes-icon is-large heart"></i> Score: <span class="score">20</span></p>
+        <p class="label-highscore nes-text is-success">
+          <i class="nes-icon is-large star"></i> Highscore: <span class="highscore"></span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
